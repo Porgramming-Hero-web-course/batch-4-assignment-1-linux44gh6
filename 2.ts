@@ -1,14 +1,14 @@
 {
-    const countWordOccurrences=(str1:string,str2:string):number=>{
-        let count:number=0
-        const splitValue:string[]=str1.split(' ')
-        for(let i=0;i<splitValue.length;i++){
-            if (splitValue[i]===str2) {
-                count++
+    const removeDuplicates=(number:number[]):number[]=>{
+        let disArray:number[]=[]
+        for(let i=0;i<number.length;i++){
+            if(number[i]!=number[i+1]){
+                disArray.push(number[i])
             }
         }
-        return count
+        return disArray
     }
-    const value=countWordOccurrences("I love typescript", "typescript")
-    console.log(value);
+   const value= removeDuplicates([1, 2, 2, 3, 4, 4, 5])
+   console.log(value);
+   
 }
