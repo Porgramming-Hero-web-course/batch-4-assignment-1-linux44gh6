@@ -1,5 +1,5 @@
 {
-    //type guards is the features of typeScript that allow type narrow of a variable withing condition statement.when we need to check the type of any arguments then we can use this type guards.It will provide you specific type.lets see the example of type guards:-
+    type guards is the features of typeScript that allow type narrow of a variable withing condition statement.when we need to check the type of any arguments then we can use this type guards.It will provide you specific type.lets see the example of type guards:-
 
     const useTypeGuards=(value:string|number)=>{
         if(value==='number'){
@@ -10,7 +10,7 @@
         }
     }
 
-    //let's see another example of type guards using unknown:
+    let's see another example of type guards using unknown:
 
     const useTypeGuards2=(value:unknown)=>{
         if(value==='number'){
@@ -21,7 +21,7 @@
         }
     }
 
-    //here we can see the type is boolean function and it's return boolean value.we can also use typeOf for checking the arguments type.let's see the use of typeOf key word
+    here we can see the type is boolean function and it's return boolean value.we can also use typeOf for checking the arguments type.let's see the use of typeOf key word
 
     const useTypeOf=(value:unknown)=>{
         if(typeof value==='string'){
@@ -35,6 +35,6 @@
         }
     }
 
-    // since we can see we can use type guards in many ways.Also we can see that how the type guards give us the specification of type.By using this type guards we got type error safety.
+     since we can see we can use type guards in many ways.Also we can see that how the type guards give us the specification of type.By using this type guards we got type error safety.
     
 }
